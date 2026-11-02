@@ -2,15 +2,19 @@
 
 A 16-slide, static HTML presentation prepared by BDGOAL for Aqua Restaurant Group (November 2026).
 
-## Publishing V5 to GitHub Pages
+## Publishing V6 to GitHub Pages
 
-1. Download the `Aqua_WhatsApp_Proposal_Polished_v5_GitHub.zip` file and extract it.
-2. Upload the three files (`index.html`, `aqua-whatsapp-v5.html`, `README.md`) to the root of your existing GitHub Pages repository. Replace the previous `index.html`.
+1. Download the `Aqua_WhatsApp_Proposal_Polished_v6_GitHub.zip` file and extract it.
+2. Upload the three files (`index.html`, `aqua-whatsapp-v6.html`, `README.md`) to the root of your existing GitHub Pages repository. Replace the previous `index.html`.
 3. Confirm that **Settings → Pages** is deploying from the correct branch and root folder.
-4. Visit `https://YOUR-USERNAME.github.io/YOUR-REPO/aqua-whatsapp-v5.html` to open the uniquely named V5 version. This provides a clean URL when your existing `index.html` has been cached.
+4. Visit `https://YOUR-USERNAME.github.io/YOUR-REPO/aqua-whatsapp-v6.html` to open the uniquely named V6 version. This provides a clean URL when your existing `index.html` has been cached.
 5. You may link clients to the main repository URL once the latest deployment is live.
 
-### V5 improvements
+### V6 improvements
+
+- **Slide 15 / pricing:** Added an explicit equivalency of **approximately HK$856 per channel per month**, calculated as HK$71,880 / 12 / 7, with HK$5,990/month shown as the group-wide monthly average. The quote remains an **annual commitment**, not a monthly payment offer. Tested the rate breakdown at desktop, short-height laptop, and mobile widths.
+
+### V5 improvements (retained)
 
 - **Slide 06:** Right-side WhatsApp phone is now height-constrained on desktop, leaving room below the frame rule for all on-slide copy; the five interactive guest scenarios and chat scrolling are retained.
 - **Slide 11:** API/Webhook cards are height-managed within the slide; the lower beige technical disclaimer is placed underneath the cards without overlapping their borders or captions.
@@ -21,7 +25,7 @@ A 16-slide, static HTML presentation prepared by BDGOAL for Aqua Restaurant Grou
 
 ### If an old release appears
 
-Use `aqua-whatsapp-v5.html`, or append `?v=20261102-v5` before any `#slide-06` fragment in your page URL. Confirm GitHub Pages has deployed the newest commit. Browser and CDN caches can briefly retain an older index page.
+Use `aqua-whatsapp-v6.html`, or append `?v=20261102-v6` before any `#slide-06` fragment in your page URL. Confirm GitHub Pages has deployed the newest commit. Browser and CDN caches can briefly retain an older index page.
 
 **Important:** A GitHub Pages URL is normally publicly accessible even if the repository is private. Do not upload confidential commercial proposals to a public site without the customer's permission. For restricted client distribution, use a separately authenticated host or an access-controlled sharing service.
 
