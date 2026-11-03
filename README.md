@@ -2,13 +2,18 @@
 
 A 16-slide, static HTML presentation prepared by BDGOAL for Aqua Restaurant Group (November 2026).
 
-## Publishing V6 to GitHub Pages
+## Publishing V7 to GitHub Pages
 
-1. Download the `Aqua_WhatsApp_Proposal_Polished_v6_GitHub.zip` file and extract it.
-2. Upload the three files (`index.html`, `aqua-whatsapp-v6.html`, `README.md`) to the root of your existing GitHub Pages repository. Replace the previous `index.html`.
+1. Download the `Aqua_WhatsApp_Proposal_Polished_v7_GitHub.zip` file and extract it.
+2. Upload the three files (`index.html`, `aqua-whatsapp-v7.html`, `README.md`) to the root of your existing GitHub Pages repository. Replace the previous `index.html`.
 3. Confirm that **Settings → Pages** is deploying from the correct branch and root folder.
-4. Visit `https://YOUR-USERNAME.github.io/YOUR-REPO/aqua-whatsapp-v6.html` to open the uniquely named V6 version. This provides a clean URL when your existing `index.html` has been cached.
+4. Visit `https://YOUR-USERNAME.github.io/YOUR-REPO/aqua-whatsapp-v7.html` to open the uniquely named V7 version. This provides a clean URL when your existing `index.html` has been cached.
 5. You may link clients to the main repository URL once the latest deployment is live.
+
+### V7 update — Blue Tick pricing
+
+- Updated the Blue Tick slide, pricing slide and commercial clarifications to state that verification application support is **included in the package at no additional charge for eligible merchants**.
+- Blue Tick eligibility assessment and Meta final approval are still required. The platform subscription is a separate commitment and remains payable regardless of Blue Tick outcome.
 
 ### V6 improvements
 
@@ -25,7 +30,7 @@ A 16-slide, static HTML presentation prepared by BDGOAL for Aqua Restaurant Grou
 
 ### If an old release appears
 
-Use `aqua-whatsapp-v6.html`, or append `?v=20261102-v6` before any `#slide-06` fragment in your page URL. Confirm GitHub Pages has deployed the newest commit. Browser and CDN caches can briefly retain an older index page.
+Use `aqua-whatsapp-v7.html`, or append `?v=20261102-v6` before any `#slide-06` fragment in your page URL. Confirm GitHub Pages has deployed the newest commit. Browser and CDN caches can briefly retain an older index page.
 
 **Important:** A GitHub Pages URL is normally publicly accessible even if the repository is private. Do not upload confidential commercial proposals to a public site without the customer's permission. For restricted client distribution, use a separately authenticated host or an access-controlled sharing service.
 
