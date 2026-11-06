@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#101d21">
-<meta name="app-version" content="2.3">
-<meta name="description" content="Aqua Restaurant Group — Reservation Messaging Proposal 2.3, prepared by BDGOAL. Two delivery routes, one guest journey.">
+<meta name="app-version" content="2.6">
+<meta name="description" content="Aqua Restaurant Group — Reservation Messaging Proposal 2.6, prepared by BDGOAL. Two delivery routes, one guest journey.">
 <meta name="color-scheme" content="light">
-<title>Aqua | Reservation Messaging Proposal 2.3 — BDGOAL</title>
+<title>Aqua | Reservation Messaging Proposal 2.6 — BDGOAL</title>
 <style>
 :root{--night:#0e1c20;--night2:#172a2c;--forest:#24423c;--jade:#2d6554;--paper:#f6f4ef;--cream:#eae8df;--white:#fff;--text:#152629;--slate:#67787a;--olive:#6e8678;--gold:#bfa47d;--gold2:#dfd0b5;--line:#d3d8d2;--sans:Inter,'Helvetica Neue',Arial,sans-serif;--serif:Georgia,'Times New Roman',serif}
 *{box-sizing:border-box}html,body{height:100%;margin:0}html{scroll-behavior:smooth}body{background:#0c161a;color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased}button,input{font:inherit}button{cursor:pointer}a{color:inherit}a:hover{text-decoration:underline}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
@@ -205,16 +205,92 @@
 @media(max-width:740px){
  .slide[data-title="Cost comparison framework"] .panel.soft .flexrow .bigNum{font-size:clamp(23px,7vw,35px)!important}
 }
+
+/* V2.4 / Customer-reported outage: new slide 03 */
+.outage-slide{background:radial-gradient(ellipse at 90% 0%,#223f3a 0,#142c2d 65%,#102326 100%)!important}
+.outage-slide .outage-head{max-width:980px;margin:9px 0 12px;line-height:1.05}
+.outage-slide .outage-lead{max-width:1060px}
+.outage-impact-layout{display:grid;grid-template-columns:minmax(0,.36fr) minmax(0,.64fr);gap:18px;align-items:stretch;flex:1;min-height:0;margin-top:24px}
+.outage-metric{border:1px solid #6b7e6d;border-radius:5px;padding:23px 24px;background:linear-gradient(160deg,#31453e,#263a37);display:flex;flex-direction:column;justify-content:space-between;min-height:0}
+.outage-metric .amount{font:normal clamp(66px,7.2vw,121px)/.95 var(--serif);color:#eed5ab;letter-spacing:-.085em;white-space:nowrap}
+.outage-metric .amount small{font:italic clamp(22px,2.6vw,42px) var(--serif);letter-spacing:-.045em;margin-left:5px;color:#d5bd91}
+.outage-metric .metric-sub{font-size:14px;font-weight:700;line-height:1.35;color:#f1eee6;margin-top:9px}
+.outage-metric .metric-note{font-size:11px;line-height:1.47;color:#c4d2c7;margin-top:14px}
+.outage-effects{display:grid;grid-template-rows:1fr 1fr;gap:13px;min-height:0}
+.outage-effect{border:1px solid #4d665e;background:#20383a;border-radius:5px;padding:19px 21px;display:flex;gap:18px;align-items:center;min-height:0}
+.outage-effect .effect-number{flex:none;display:grid;place-items:center;border:1px solid #769185;width:38px;height:38px;border-radius:50%;font-size:12px;color:#d4e8d7}
+.outage-effect h3{font-size:20px;line-height:1.22;margin:0 0 7px;color:#f2f1e9}
+.outage-effect p{font-size:12px;line-height:1.55;color:#bdcdc5;margin:0}
+.outage-consequence{display:flex;align-items:center;gap:17px;margin-top:17px;padding:13px 17px;background:#3c3b31;border-left:3px solid #cbb08a;border-radius:2px;color:#f4efe3}
+.outage-consequence strong{flex:none;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#efd5ac}
+.outage-consequence span{font-size:13px;line-height:1.45}
+.outage-qualification{font-size:10px;line-height:1.5;color:#afc1b8;margin:10px 0 0}
+@media(max-height:840px) and (min-width:741px){
+ .outage-slide .outage-head{margin:5px 0 7px}.outage-impact-layout{margin-top:14px;gap:12px}
+ .outage-metric{padding:15px 17px}.outage-metric .amount{font-size:clamp(55px,6vh,85px)}
+ .outage-metric .amount small{font-size:27px}.outage-metric .metric-sub{font-size:12px}.outage-metric .metric-note{font-size:10px;margin-top:6px}
+ .outage-effects{gap:9px}.outage-effect{padding:11px 14px;gap:12px}.outage-effect h3{font-size:16px;margin-bottom:4px}.outage-effect p{font-size:10px;line-height:1.36}
+ .outage-effect .effect-number{width:30px;height:30px;font-size:10px}.outage-consequence{padding:9px 13px;margin-top:9px;gap:11px}.outage-consequence span{font-size:11px}.outage-qualification{font-size:9px;margin-top:6px}
+}
+@media(max-height:660px) and (min-width:741px){
+ .outage-impact-layout{margin-top:8px;gap:9px}.outage-metric{padding:10px 14px}.outage-metric .amount{font-size:52px}.outage-metric .amount small{font-size:22px}.outage-metric .metric-sub{font-size:11px}.outage-metric .metric-note{font-size:9px}
+ .outage-effect{padding:8px 12px;gap:10px}.outage-effect h3{font-size:13px;margin-bottom:3px}.outage-effect p{font-size:9px;line-height:1.28}
+ .outage-consequence{padding:7px 10px;margin-top:7px}.outage-consequence span{font-size:10px}.outage-qualification{font-size:8px;line-height:1.28;margin-top:5px}
+}
+@media(max-width:740px){
+ .outage-slide .outage-head{font-size:clamp(32px,7.8vw,42px);margin:16px 0}.outage-impact-layout{grid-template-columns:1fr;display:grid;gap:12px;margin-top:23px;flex:none}
+ .outage-metric{min-height:185px;padding:20px 22px}.outage-metric .amount{font-size:78px}.outage-metric .amount small{font-size:30px}.outage-metric .metric-sub{font-size:14px}.outage-metric .metric-note{font-size:11px}
+ .outage-effects{grid-template-rows:auto auto}.outage-effect{padding:18px 16px;gap:12px}.outage-effect h3{font-size:18px}.outage-effect p{font-size:12px}.outage-consequence{align-items:flex-start;flex-direction:column;gap:6px;padding:16px;margin-top:14px}.outage-consequence span{font-size:12px}.outage-qualification{font-size:10px;margin-top:12px;padding-bottom:18px}
+}
+
+/* V2.6: risk infographic for slide 03; scoped to the outage slide only. */
+.outage-slide .outage-metric{gap:8px}
+.outage-slide .risk-state{display:flex;align-items:center;gap:9px;min-height:23px;color:#efc58b;font-size:10px;font-weight:800;letter-spacing:.135em}
+.outage-slide .risk-state svg{height:21px;width:21px;flex:none}
+.outage-slide .risk-state i{width:7px;height:7px;border-radius:50%;background:#df9271;box-shadow:0 0 0 4px #df927123;margin-left:auto;flex:none}
+.outage-slide .risk-duration{margin:auto 0}
+.outage-slide .risk-timeline{margin-top:7px;padding-top:11px;border-top:1px solid #75908765}
+.outage-slide .risk-timeline-labels{display:flex;justify-content:space-between;gap:5px;color:#e8d2b2;font-size:8px;font-weight:750;letter-spacing:.09em}
+.outage-slide .risk-timeline-bar{height:8px;background:#46564d;border-radius:20px;position:relative;margin:9px 4px 9px 1px;overflow:visible}
+.outage-slide .risk-timeline-progress{position:absolute;inset:0;background:linear-gradient(90deg,#a7a584 0%,#d8b07b 55%,#d9846b 100%);border-radius:20px}
+.outage-slide .risk-timeline-end{position:absolute;right:-3px;top:50%;width:14px;height:14px;border:3px solid #f4d3a7;background:#cc8067;transform:translateY(-50%);border-radius:50%;box-shadow:0 0 0 4px #cf8a6540}
+.outage-slide .risk-timeline-caption{color:#c5d0c7;font-size:10px;line-height:1.35}
+.outage-slide .outage-effect .effect-number{border-radius:10px;background:#344843;border-color:#7d8e7c;color:#dfba8c}
+.outage-slide .outage-effect .effect-number svg{width:20px;height:20px}
+.outage-slide .risk-impact-label{display:block;font-size:9px;line-height:1.3;letter-spacing:.12em;font-weight:750;color:#c8b18e;margin-bottom:7px}
+.outage-slide .outage-consequence{display:grid;grid-template-columns:max-content minmax(0,1fr);column-gap:15px;row-gap:8px;background:#3d382f;border-left:3px solid #d7a270}
+.outage-slide .consequence-heading{display:flex;align-items:center;gap:8px;min-width:0}
+.outage-slide .consequence-warning{display:grid;place-items:center;flex:none;color:#f2c994}
+.outage-slide .consequence-warning svg{width:20px;height:20px}
+.outage-slide .risk-not-advised{grid-column:1/-1;display:flex;align-items:center;gap:8px;color:#e1b98c;font-size:10px;line-height:1.3;letter-spacing:.055em;font-weight:750}
+.outage-slide .risk-not-advised svg{width:15px;height:15px;flex:none}
+@media(max-height:840px) and (min-width:741px){
+ .outage-slide .risk-state{font-size:9px;min-height:17px}.outage-slide .risk-state svg{height:16px;width:16px}
+ .outage-slide .risk-timeline{padding-top:7px;margin-top:1px}.outage-slide .risk-timeline-labels{font-size:7px}.outage-slide .risk-timeline-bar{height:6px;margin:6px 3px 6px 0}.outage-slide .risk-timeline-end{height:11px;width:11px;border-width:2px}
+ .outage-slide .risk-timeline-caption{font-size:9px}.outage-slide .risk-impact-label{font-size:8px;margin-bottom:4px}
+ .outage-slide .outage-effect .effect-number svg{width:16px;height:16px}.outage-slide .outage-consequence{row-gap:4px}.outage-slide .risk-not-advised{font-size:9px}
+ .outage-slide .consequence-warning svg{height:16px;width:16px}
+}
+@media(max-height:660px) and (min-width:741px){
+ .outage-slide .outage-metric{gap:3px}.outage-slide .risk-state{font-size:8px}.outage-slide .risk-timeline{padding-top:4px;margin-top:0}.outage-slide .risk-timeline-labels{font-size:6.5px}.outage-slide .risk-timeline-caption{font-size:8px}.outage-slide .risk-timeline-bar{margin:5px 3px}
+ .outage-slide .risk-impact-label{font-size:7px;margin-bottom:2px}.outage-slide .outage-consequence{column-gap:8px;row-gap:3px}.outage-slide .risk-not-advised{font-size:8px;line-height:1.1}
+}
+@media(max-width:740px){
+ .outage-slide .outage-metric{gap:13px;min-height:240px}.outage-slide .risk-state{font-size:10px;min-height:24px}.outage-slide .risk-timeline{padding-top:13px}.outage-slide .risk-timeline-caption{font-size:10px}.outage-slide .risk-timeline-labels{font-size:9px}
+ .outage-slide .outage-effect .effect-number{width:42px;height:42px}.outage-slide .outage-effect .effect-number svg{width:20px;height:20px}
+ .outage-slide .outage-consequence{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+ .outage-slide .risk-impact-label{font-size:9px;margin-bottom:6px}.outage-slide .risk-not-advised{font-size:10px;margin-top:3px}
+}
 </style>
 </head>
 <body>
 <div class="shell">
-<header class="headbar"><div class="head-left"><span class="brandmark">×</span><b>BDGOAL</b><span class="slash">/</span><span>Aqua Restaurant Group</span></div><div class="head-meta">Proposal 2.3 · November 2026</div></header>
+<header class="headbar"><div class="head-left"><span class="brandmark">×</span><b>BDGOAL</b><span class="slash">/</span><span>Aqua Restaurant Group</span></div><div class="head-meta">Proposal 2.6 · November 2026</div></header>
 <main class="stage" id="stage" aria-label="Aqua Guest Messaging Pitch Deck">
 <!-- 01 -->
 <section class="slide deep active" data-title="A more useful reservation message">
 <div class="content">
- <div class="topline"><div class="eyebrow">A proposal for Aqua Restaurant Group</div><div class="tag">01 / 14</div></div>
+ <div class="topline"><div class="eyebrow">A proposal for Aqua Restaurant Group</div><div class="tag">01 / 15</div></div>
  <div class="grid2" style="align-items:center;flex:1;gap:6%">
   <div>
    <div class="kicker" style="color:#d4be98">Two practical options. One objective.</div>
@@ -265,10 +341,40 @@
 </div>
 </section>
 
+<!-- 03 · WHY ACTION IS NEEDED -->
+<section class="slide dark nightshift outage-slide" data-title="The cost of interrupted guest contact">
+<div class="content">
+  <div class="topline"><div class="eyebrow">Current situation / Business risk</div><div class="tag">03 / WHY ACTION IS NEEDED</div></div>
+  <div class="kicker">A blocked number is not just a messaging problem.</div>
+  <h2 class="display small outage-head">WhatsApp goes silent.<br><em>The bookings don't.</em></h2>
+  <p class="lead outage-lead">Aqua has experienced repeated WhatsApp account restrictions lasting at least 24 hours. During each disruption, guests still need answers — but the restaurant loses an important way to reach them.</p>
+  <div class="outage-impact-layout">
+    <div class="outage-metric">
+      <div class="risk-state" aria-label="Service interruption alert">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path stroke-linecap="round" d="M12 9v5"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></svg>
+        <span>CHANNEL RESTRICTED</span><i aria-hidden="true"></i>
+      </div>
+      <div class="risk-duration"><div class="amount">24<small>hrs+</small></div><div class="metric-sub">Reported minimum downtime</div></div>
+      <div class="risk-timeline" aria-label="A restriction may interrupt messaging for at least 24 hours">
+        <div class="risk-timeline-labels"><span>RESTRICTION BEGINS</span><span>24H+</span></div>
+        <div class="risk-timeline-bar"><span class="risk-timeline-progress"></span><span class="risk-timeline-end" aria-hidden="true"></span></div>
+        <div class="risk-timeline-caption">Messaging interrupted while bookings continue</div>
+      </div>
+    </div>
+    <div class="outage-effects">
+      <div class="outage-effect"><span class="effect-number" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H5l2-3.5A7.5 7.5 0 1 1 20 11.5Z"/><path d="m10 9 5 5m0-5-5 5"/></svg></span><div><span class="risk-impact-label">EXISTING RESERVATIONS</span><h3>Existing guests cannot get a timely reply.</h3><p>Booking amendments, cancellations and arrival queries may go unresolved when guests need an answer.</p></div></div>
+      <div class="outage-effect"><span class="effect-number" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-12 4 6 4m0-4-6 4"/></svg></span><div><span class="risk-impact-label">NEW BOOKINGS</span><h3>New reservations lose their follow-up.</h3><p>Confirmations and reminders cannot be sent through the affected WhatsApp number, creating uncertainty around upcoming covers.</p></div></div>
+    </div>
+  </div>
+  <div class="outage-consequence"><div class="consequence-heading"><span class="consequence-warning" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3Z"/><path stroke-linecap="round" d="M12 9v5"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></svg></span><strong>The cost of inaction</strong></div><span>The restrictions have already happened more than once. Without changing the approach, the next incident could again mean unanswered guests, missed follow-ups and bookings at risk.</span><div class="risk-not-advised"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M7 17 17 7"/></svg><span>NOT ADVISED: Depending on one unreliable contact route without a fallback.</span></div></div>
+  <p class="outage-qualification">Based on Aqua-reported restrictions; commercial losses have not been quantified. WhatsApp API remains subject to Meta restrictions. An independent SMS route can help maintain notifications when WhatsApp is unavailable, subject to service configuration.</p>
+</div>
+</section>
+
 <!-- 03 -->
 <section class="slide dark nightshift" data-title="A useful reservation notice">
 <div class="content">
- <div class="topline"><div class="eyebrow">A practical notification</div><div class="tag">03 / WHAT THE MESSAGE NEEDS</div></div>
+ <div class="topline"><div class="eyebrow">A practical notification</div><div class="tag">04 / WHAT THE MESSAGE NEEDS</div></div>
  <h2 class="display small">Keep it clear.<br><em>Make the next action obvious.</em></h2>
  <p class="lead">Whether the first message arrives by SMS or WhatsApp, its job is the same: give the guest the right information and a straightforward way to act.</p>
  <div class="grid2 mt20 notification-layout" style="flex:1;gap:5%;align-items:center">
@@ -292,7 +398,7 @@
 <!-- 04 -->
 <section class="slide dark" data-title="Two options, same aim">
 <div class="content">
- <div class="topline"><div class="eyebrow">The proposal in one view</div><div class="tag">04 / TWO ROUTES</div></div>
+ <div class="topline"><div class="eyebrow">The proposal in one view</div><div class="tag">05 / TWO ROUTES</div></div>
  <h2 class="display small">Two delivery routes.<br><em>The same longer-term opportunity.</em></h2>
  <p class="lead">Both options use one WhatsApp Business API solution for guest conversations and consent-based re-engagement. BDGOAL designs and manages the roll-out for all seven restaurants; the distinction is how the initial notification is sent.</p>
  <div class="grid2 mt20" style="flex:1">
@@ -301,24 +407,24 @@
    <h3 style="font:normal 29px var(--serif);margin:16px 0 8px">SMS + WhatsApp API</h3>
    <p style="font-size:13px">Send the initial booking confirmation or reminder by SMS. Include a WhatsApp link for guests who want to speak with the restaurant.</p>
    <div class="stack push mt20"><div class="pill" style="white-space:normal">SMS: essential booking information</div><div class="pill" style="white-space:normal">WhatsApp: guest replies and service</div><div class="pill" style="white-space:normal">WhatsApp: opted-in marketing</div></div>
-   <div class="separator"></div><p style="font-size:11px;color:#b7c6bf">Best fit when the group wants to separate notification costs from richer guest conversations.</p>
+   <div class="separator"></div><p style="font-size:11px;color:#b7c6bf">Adds an independent SMS notification route when WhatsApp is unavailable, provided SMS delivery is configured and operational.</p>
   </div>
   <div class="panel" style="display:flex;flex-direction:column;border-color:#91b2a0">
    <div class="flexrow" style="justify-content:space-between"><span class="chip" style="background:#315f4e;color:#eef5ed">OPTION 02</span><span class="tiny" style="color:#c9d3c8">ONE CHANNEL</span></div>
    <h3 style="font:normal 29px var(--serif);margin:16px 0 8px">WhatsApp API Only</h3>
    <p style="font-size:13px">Send the approved booking message directly through WhatsApp. Guests can reply in the same conversation without changing channels.</p>
    <div class="stack push mt20"><div class="pill" style="white-space:normal">WhatsApp: booking notification</div><div class="pill" style="white-space:normal">WhatsApp: guest replies and service</div><div class="pill" style="white-space:normal">WhatsApp: opted-in marketing</div></div>
-   <div class="separator"></div><p style="font-size:11px;color:#b7c6bf">Best fit when the group prefers a single guest-facing communication channel.</p>
+   <div class="separator"></div><p style="font-size:11px;color:#b7c6bf">Best fit for a single conversation channel; Meta restrictions can still interrupt WhatsApp delivery.</p>
   </div>
  </div>
- <p class="note mt14">Both routes are implemented and coordinated by BDGOAL. Neither assumes a parallel WhatsApp Business App inbox or an automatic link to the reservation system.</p>
+ <p class="note mt14">Both routes are implemented and coordinated by BDGOAL. Neither assumes automatic access to reservation data. WhatsApp API improves workflow control but cannot guarantee uninterrupted Meta access.</p>
 </div>
 </section>
 
 <!-- 05 -->
 <section class="slide dark nightshift" data-title="The complete guest funnel">
 <div class="content">
- <div class="topline"><div class="eyebrow">The full commercial journey</div><div class="tag">05 / END-TO-END FUNNEL</div></div>
+ <div class="topline"><div class="eyebrow">The full commercial journey</div><div class="tag">06 / END-TO-END FUNNEL</div></div>
  <h2 class="display small">From confirmation to <em>another booking.</em></h2>
  <p class="lead">The funnel only progresses when the guest takes the relevant action. It is not a promise that every reservation becomes a marketing contact.</p>
  <div class="funnel-steps mt30" style="flex:1;align-items:stretch">
@@ -336,7 +442,7 @@
 <!-- 06 -->
 <section class="slide dark nightshift" data-title="Option 1 workflow">
 <div class="content">
- <div class="topline"><div class="eyebrow">Option 01</div><div class="tag">06 / SMS + WHATSAPP API</div></div>
+ <div class="topline"><div class="eyebrow">Option 01</div><div class="tag">07 / SMS + WHATSAPP API</div></div>
  <span class="chip gold">TWO CHANNELS · NOTIFICATION-LED</span>
  <h2 class="display small">SMS starts the journey.<br><em>WhatsApp continues it.</em></h2>
  <div class="route mt20" style="flex:1;align-items:stretch">
@@ -359,7 +465,7 @@
 <!-- 07 -->
 <section class="slide dark" data-title="Option 2 workflow">
 <div class="content">
- <div class="topline"><div class="eyebrow">Option 02</div><div class="tag">07 / WHATSAPP API ONLY</div></div>
+ <div class="topline"><div class="eyebrow">Option 02</div><div class="tag">08 / WHATSAPP API ONLY</div></div>
  <span class="chip" style="background:#2e614e;color:#ecf7ef;width:max-content">ONE CHANNEL · CONVERSATION-LED</span>
  <h2 class="display small">One message thread.<br><em>From booking to follow-up.</em></h2>
  <div class="route mt20" style="flex:1;align-items:stretch">
@@ -381,7 +487,7 @@
 <!-- 08 -->
 <section class="slide dark nightshift" data-title="Interactive guest journey">
 <div class="content">
- <div class="topline"><div class="eyebrow">Interactive preview</div><div class="tag">08 / EXPERIENCE THE DIFFERENCE</div></div>
+ <div class="topline"><div class="eyebrow">Interactive preview</div><div class="tag">09 / EXPERIENCE THE DIFFERENCE</div></div>
  <h2 class="display small">Same guest. <em>Different starting point.</em></h2>
  <div class="demo-wrap">
   <div>
@@ -405,7 +511,7 @@
 <!-- 09 -->
 <section class="slide dark nightshift" data-title="Cost comparison framework">
 <div class="content">
- <div class="topline"><div class="eyebrow">Costs in context</div><div class="tag">09 / BUDGETING THE FULL JOURNEY</div></div>
+ <div class="topline"><div class="eyebrow">Costs in context</div><div class="tag">10 / BUDGETING THE FULL JOURNEY</div></div>
  <h2 class="display small">Compare the cost of the <em>actual journey.</em></h2>
  <p class="lead">For budgeting, use an indicative SMS cost per booking notification, then consider WhatsApp messaging, the platform and BDGOAL's managed implementation. SMS providers may bill longer texts in multiple segments.</p>
  <div class="grid2 mt20" style="flex:1;align-items:stretch">
@@ -434,7 +540,7 @@
 <!-- 10 -->
 <section class="slide dark" data-title="A realistic implementation path">
 <div class="content">
- <div class="topline"><div class="eyebrow">Implementation logic</div><div class="tag">10 / WHAT CAN HAPPEN WHEN</div></div>
+ <div class="topline"><div class="eyebrow">Implementation logic</div><div class="tag">11 / WHAT CAN HAPPEN WHEN</div></div>
  <h2 class="display small">Start with a controlled process.<br><em>Automate when the data is available.</em></h2>
  <div class="grid2 mt20" style="flex:1;align-items:stretch">
   <div class="panel"><div class="flexrow"><span class="round-num">01</span><span class="chip gold">INITIAL DELIVERY</span></div><h3 style="font:normal 28px var(--serif);margin:15px 0">Staff-assisted messaging</h3><p style="font-size:13px">Reservations teams use available booking details to send an approved WhatsApp template or a prepared SMS. Messages are handled in a defined workflow without claiming automatic SevenRooms synchronisation.</p><div class="separator"></div><p>What BDGOAL sets up: templates, user roles, instructions, consent handling and a practical process for all seven restaurants.</p></div>
@@ -447,7 +553,7 @@
 <!-- 11 -->
 <section class="slide dark nightshift" data-title="Consent and data protection">
 <div class="content">
- <div class="topline"><div class="eyebrow">Responsible communications</div><div class="tag">11 / CONSENT & GOVERNANCE</div></div>
+ <div class="topline"><div class="eyebrow">Responsible communications</div><div class="tag">12 / CONSENT & GOVERNANCE</div></div>
  <h2 class="display small">The guest stays in control.<br><em>So does Aqua.</em></h2>
  <p class="lead">The same system can support service and marketing, but they should remain distinct in both purpose and permission.</p>
  <div class="grid3 mt20" style="flex:1;align-items:stretch">
@@ -463,7 +569,7 @@
 <!-- 12 -->
 <section class="slide dark" data-title="Data protection and transition">
 <div class="content">
- <div class="topline"><div class="eyebrow">Governance and continuity</div><div class="tag">12 / SECURITY & MIGRATION</div></div>
+ <div class="topline"><div class="eyebrow">Governance and continuity</div><div class="tag">13 / SECURITY & MIGRATION</div></div>
  <h2 class="display small">Protect guest information.<br><em>Make the transition clear.</em></h2>
  <div class="grid2 mt20" style="flex:1">
   <div class="panel"><span class="chip" style="background:#305b4f;color:#e8f1e9">DATA SECURITY</span><h3 style="font:normal 26px var(--serif);margin-top:14px">Evidence, not assumptions</h3><p style="font-size:13px">BDGOAL will coordinate the proposed WhatsApp API provider's security and privacy documentation for Aqua's review, including relevant certifications, the data-processing agreement, hosting location and access controls.</p><div class="separator"></div><p>Account ownership, guest-data access, retention, permitted uses and exit procedures will be documented in the agreed service scope.</p></div>
@@ -477,7 +583,7 @@
 <!-- 13 -->
 <section class="slide dark nightshift" data-title="Why work through BDGOAL">
 <div class="content">
- <div class="topline"><div class="eyebrow">Why BDGOAL</div><div class="tag">13 / OUR ROLE IN THE SOLUTION</div></div>
+ <div class="topline"><div class="eyebrow">Why BDGOAL</div><div class="tag">14 / OUR ROLE IN THE SOLUTION</div></div>
  <h2 class="display small">A platform gives access.<br><em>BDGOAL makes it work across seven restaurants.</em></h2>
  <p class="lead">The value of working through BDGOAL is one accountable team to design, deliver and support Aqua's chosen messaging route — not another software login for each restaurant to manage.</p>
  <div class="grid3 mt20" style="flex:1;align-items:stretch">
@@ -493,7 +599,7 @@
 <!-- 14 -->
 <section class="slide deep" data-title="Recommended decision">
 <div class="content">
- <div class="topline"><div class="eyebrow">The decision for Aqua</div><div class="tag">14 / MOVING FORWARD</div></div>
+ <div class="topline"><div class="eyebrow">The decision for Aqua</div><div class="tag">15 / MOVING FORWARD</div></div>
  <div class="grid2" style="align-items:center;flex:1;gap:7%">
   <div>
    <div class="kicker" style="color:#d4be98">Two clear options</div>
@@ -514,7 +620,7 @@
 </section>
 
 </main>
-<nav class="nav" aria-label="Slide navigation"><div class="navleft"><button type="button" class="navbutton" id="tocOpen" aria-haspopup="dialog" aria-expanded="false">☷ &nbsp; Contents</button><span class="count" id="counter">01 / 14</span><div class="progress"><div class="bar" id="progress"></div></div></div><div class="navright"><span class="navhint">USE ← → TO NAVIGATE</span><button type="button" class="navcircle" id="previous" aria-label="Previous slide">←</button><button type="button" class="navcircle" id="next" aria-label="Next slide">→</button></div></nav>
+<nav class="nav" aria-label="Slide navigation"><div class="navleft"><button type="button" class="navbutton" id="tocOpen" aria-haspopup="dialog" aria-expanded="false">☷ &nbsp; Contents</button><span class="count" id="counter">01 / 15</span><div class="progress"><div class="bar" id="progress"></div></div></div><div class="navright"><span class="navhint">USE ← → TO NAVIGATE</span><button type="button" class="navcircle" id="previous" aria-label="Previous slide">←</button><button type="button" class="navcircle" id="next" aria-label="Next slide">→</button></div></nav>
 </div>
 <div class="toc" id="toc" role="dialog" aria-modal="true" aria-label="Presentation contents"><div class="toc-panel"><div class="toc-top"><span class="kicker">BDGOAL / AQUA RESTAURANT GROUP</span><button class="close" type="button" id="tocClose">Close ✕</button></div><h2>Presentation overview</h2><div class="toc-items" id="tocList"></div></div></div>
 <script>
